@@ -1,0 +1,13 @@
+.resume {
+	overflow-x: hidden;
+}
+
+.resume__grid {
+	display: grid;
+	grid-template-columns: 1fr 278px;
+	grid-gap: 60px;
+	padding: 50px 0;
+	@include media-breakpoint-down(md) {
+		grid-template-columns: 1fr;
+	}
+}

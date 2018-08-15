@@ -1,0 +1,19 @@
+.link-to-top {
+  &:hover {
+    .link-to-top__icon {
+      fill :lighten(#999, 20%);
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.link-to-top__icon {
+  fill :#9b9b9d;
+  height: 12px;
+  margin-left: 10px;
+  width: 12px;
+ 
+}
+

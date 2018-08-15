@@ -1,0 +1,54 @@
+.aside-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0 0 0 18px;
+  li {
+    margin-right: 25px;
+    margin-bottom: 6px;
+  }
+  a {
+    background-color: $theme-color;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    padding: 11px 8px 11px 25px;
+    position: relative;
+    transition: background-color 0.25s;
+    white-space: nowrap;
+    &::before {
+      background-color: #fffeff;
+      border-radius: 50%;
+      content: '';
+      height: 6px;
+      left: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+    }
+    &::after {
+      background-color: $theme-color;
+      content: '';
+      height: 25px;
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      transform: translateY(-50%) rotate(45deg);
+      transition: background-color 0.25s;
+      width: 25px;
+      z-index: -1;
+    }
+    &:hover {
+      background-color: darken($theme-color, 10%);
+      text-decoration: none;
+      transition: background-color 0.25s;
+      &::after {
+        background-color: darken($theme-color, 10%);
+        transition: background-color 0.25s;
+      }
+    }
+   }
+}

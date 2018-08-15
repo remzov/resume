@@ -1,0 +1,36 @@
+.readmore-item {
+  display: inline-block;
+}
+
+.readmore-item__image-link {
+  display: inline-block;
+  position: relative;
+  &::before {
+    background-color: #fff;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  &:hover {
+    .readmore-item__image {
+      opacity: 0.75;
+      transition: opacity 0.25s;
+    }
+  }
+}
+
+.readmore-item__image {
+  display: block;
+  margin-bottom: 10px;
+  transition: opacity 0.25s;
+}
+
+.readmore-item__title {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1;
+}

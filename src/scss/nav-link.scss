@@ -1,0 +1,28 @@
+.nav-link {
+  display: block;
+  font-family: $font-family-decor;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.25s;
+  white-space: nowrap;
+  &_header {
+    color: #fff;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+      color: #fff;
+      transition: background-color 0.25s;
+    }
+  }
+  &_footer {
+    color: #999;
+    &:hover {
+      color: lighten(#999, 20%);
+    }
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}

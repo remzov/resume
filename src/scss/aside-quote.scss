@@ -1,0 +1,24 @@
+.aside-quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-quote__text {
+  font-style: italic;
+  margin-bottom: 5px;
+  padding: 15px 0 0 15px;
+  position: relative;
+  text-indent: 10px;
+  &::before {
+    content: '“';
+    font-size:50px;
+    left: -7px;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.aside-quote__source {
+  align-self: flex-end;
+}

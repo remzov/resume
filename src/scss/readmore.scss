@@ -1,0 +1,9 @@
+.readmore__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 380px);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 100%;
+  }
+}
